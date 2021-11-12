@@ -66,6 +66,9 @@ def index(request):
 def models(request):
     return render(request,'models.html')
 
+def project(request):
+    return render(request,'project.html')
+
 def result(request):
     lis = []
     cls = joblib.load('final_model')
@@ -97,3 +100,4 @@ def result(request):
     ans = cls.predict([lis])
     print(ans[0])
     return render(request,'result.html')
+
