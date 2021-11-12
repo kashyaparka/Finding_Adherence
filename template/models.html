@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+		<title>Treviso - Clean & Elegant Onepage Multipurpose Bootstrap HTML</title>
+		<!-- Bootstrap core CSS -->
+		<link href={% static 'css/bootstrap.min.css' %} rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom styles for this template -->
+		<link href={% static 'css/style.css' %} rel="stylesheet">
+		<link href={% static 'css/form.css' %} rel="stylesheet">
+	</head>
+	<body id="page-top">
+		<!-- Navigation -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					 <a class="navbar-brand page-scroll bg-dark" href="#page-top"><img src={% static 'images/logo1.jpg' %} alt="Treviso theme logo" style="width:150px;"></a> 
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#about">About</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#portfolio">Models</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#team">Team</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+            <div class="zf-templateWidth">
+        <form
+            action='{% url 'result' %}'
+            name='form' method='post'
+            accept-charset='UTF-8' id='form'>
+            {% csrf_token %}
+            <input type="hidden" name="zf_referrer_name"
+                value="">
+            <!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+            <input type="hidden" name="zf_redirect_url" value="">
+            <!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+            <input type="hidden" name="zc_gad" value="">
+            <!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+            <div class="zf-templateWrapper">
+                <ul class="zf-tempHeadBdr">
+                    <li class="zf-tempHeadContBdr">
+                        <h2 class="zf-frmTitle"><em>Enter your details</em></h2>
+                        <p class="zf-frmDesc"></p>
+                        <div class="zf-clearBoth"></div>
+                    </li>
+                </ul>
+                <div class="zf-subContWrap zf-topAlign">
+                    <ul>
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Country
+                            </label>
+                            <div class="zf-tempContDiv">
+                            <select class="zf-form-sBox" name="Dropdown" checktype="c1" type=value>
+                                    <option selected="true" value="-Select-">-Select-</option>
+                                    <option value="US" selected>US</option>
+                                    <option value="VN" >VN</option>
+                                    <option value="PE">PE</option>
+                                    <option value="DO">DO</option>
+                                    <option value="IT">IT</option>
+                                    <option value="HT">HT</option>
+                                    <option value="MX">MX</option>
+                                    <option value="DM">DM</option>
+                                    <option value="IN">IN</option>
+                                    <option value="VE">VE</option>
+                                    <option value="CR">CR</option>
+                                    <option value="FR">FR</option>
+                                    <option value="PR">PR</option>
+                                    <option value="CL">CL</option>
+                                    <option value="CN">CN</option>
+                                    <option value="DE">DE</option>
+                                    <option value="GR">GR</option>
+                                    <option value="PA">PA</option>
+                                    <option value="RU">RU</option>
+                                    <option value="HN">HN</option>
+                                    <option value="GT">GT</option>
+                                    <option value="JM">JM</option>
+                                    <option value="KR">KR</option>
+                                    <option value="SV">SV</option>
+                                    <option value="CO">CO</option>
+                                </select>
+                                <p id="Dropdown_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li>
+
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Ethnicity
+                            </label>
+                            <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown1" checktype="c1">
+                                    <option selected="true" value="-Select-">-Select-</option>
+                                    <option value="hispanic">Hispanic</option>
+                                    <option value="nonhispanic">Non-Hispanic</option>
+                                </select>
+                                <p id="Dropdown1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li>
+                             <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Ethnicity
+                            </label>
+                            <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown4" checktype="c1">
+                                    <option selected="true" value="-Select-">-Select-</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Feamle</option>
+                                </select>
+                                <p id="Dropdown1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li>
+                        <!---------Dropdown Ends Here---------->
+                        <!---------Dropdown Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">County
+                            </label>
+                            <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown2" checktype="c1">
+                                    <option selected="true" value="-Select-">-Select-</option>
+                                    <option value="Worcester">Worcester</option>
+                                    <option value="Bristol">Bristol</option>
+                                    <option value="Middlesex">Middlesex</option>
+                                    <option value="Suffolk">Suffolk</option>
+                                    <option value="Norfolk">Norfolk</option>
+                                    <option value="Franklin">Franklin</option>
+                                    <option value="Hampshire">Hampshire</option>
+                                    <option value="Hampden">Hampden</option>
+                                    <option value="Dukes">Dukes</option>
+                                    <option value="Essex">Essex</option>
+                                    <option value="Plymouth">Plymouth</option>
+                                    <option value="Barnstable">Barnstable</option>
+                                    <option value="Berkshire">Berkshire</option>
+                                    <option value="Nantucket">Nantucket</option>
+                                </select>
+                                <p id="Dropdown2_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li>
+                        <!---------Dropdown Ends Here---------->
+                        <!---------Dropdown Starts Here---------->
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Race
+                            </label>
+                            <div class="zf-tempContDiv"><select class="zf-form-sBox" name="Dropdown3" checktype="c1">
+                                    <option selected="true" value="-Select-">-Select-</option>
+                                    <option value="white">white</option>
+                                    <option value="asian">asian</option>
+                                    <option value="black">black</option>
+                                    <option value="native">native</option>
+                                    <option value="other">other</option>
+                                </select>
+                                <p id="Dropdown3_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li>
+                        <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">Age
+                                <em class="zf-important">*</em>
+                            </label>
+                            <div class="zf-tempContDiv"><span> <input type="number" name=Number checktype="c2" value="0"
+                                        maxlength="18" /></span>
+                                <p id="Number_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+                            </div>
+                            <div class="zf-clearBoth"></div>
+                        </li>
+                        <!---------Number Ends Here---------->
+                    </ul>
+                </div>
+                <!---------template Container Starts Here---------->
+                <ul>
+                    <li class="zf-fmFooter"><button class="zf-submitColor">Submit</button></li>
+                </ul>
+            </div><!-- 'zf-templateWrapper' ends -->
+        </form>
+        </div><!-- 'zf-templateWidth' ends -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src={% static 'js/bootstrap.min.js' %}></script>
+		<script src{% static 'js/SmoothScroll.js' %}></script>
+		<script src={% static 'js/theme-scripts.js' %}></script>
+		<script src={% static 'js/validation.js' %}></script>
+	</body>
+</html>
