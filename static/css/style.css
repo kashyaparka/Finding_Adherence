@@ -1,21 +1,7 @@
-/*------------------------------------------------------------------
 
-Project:	Treviso - One page multi purpose page
-Version:	1.0
-Last change:	17/08/2015 [...]
-Designed by:	MOOZ Themes / www.MOOZthemes.com
-Primary use:	One page
-
-/*--------------------
-Import Google Fonts
---------------------*/
-
-/* main font for menu. */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400|Raleway:200,300,400,500,700,900);
 
-/*--------------------
-1. General
---------------------*/
+
 
 body {
 	margin: 0px;
@@ -399,9 +385,7 @@ figure.effect-bubba:hover p {
 	transform: translate3d(0,0,0);
 }
 
-/*--------------------
-4.4. Dark Short section (counters, quote, etc)
---------------------*/
+
 
 .light-bg {
     background: #f1f1f1;
@@ -531,44 +515,7 @@ footer p a span {
     font-weight: 700;
 }
 
-/*--------------------
-6. Modal
---------------------*/
 
-.modal-content {
-	border-radius: 0;	
-}
-.modal-header .close {
-	font-size: 30px;	
-}
-.modal-title {    
-	text-transform: uppercase;
-	font-size: 23px;
-}
-
-.modal-body {
-	padding: 0;
-}
-
-.modal-body p {
-	margin: 30px 20px;
-	color: #2D2D2D;		
-}
-
-.modal-works {
-font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #fff;
-    margin: 25px 20px;
-}
-
-.modal-works span {
-	background-color: #FED136;
-    margin-right: 15px;
-    padding: 5px 10px;
-}
 
 /*--------------------
 7. Components
