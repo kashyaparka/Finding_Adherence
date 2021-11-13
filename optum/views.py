@@ -92,12 +92,14 @@ def result(request):
     lis.append(get_race)
     lis.append(get_county)
     lis.append(get_country)
-    lis.append(get_age)
-    lis.append(41.499)
-    lis.append(-71.342)
+    lis.append(int(get_age))
     
     print(lis)
     ans = cls.predict([lis])
     print(ans[0])
-    return render(request,'result.html')
+    if ans[0]==0:
+      k="Adherent"
+    else:
+      k="Non-Adherent"
+    return render(request,'result.html',context={"ans":k})
 

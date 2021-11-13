@@ -37,14 +37,14 @@
 						<li class="hidden">
 							<a href="#page-top"></a>
 						</li>
-						<li>
-							<a class="page-scroll" href="#about">About</a>
+							<li>
+							<a class="page-scroll" href={% url 'index' %}>HOME</a>
+						</li>
+							<li>
+							<a class="page-scroll" href="{% url 'models' %}">Models</a>
 						</li>
 						<li>
-							<a class="page-scroll" href="#portfolio">Models</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#team">Team</a>
+							<a class="page-scroll" href="{% url 'project' %}">Project</a>
 						</li>
 						<li>
 							<a class="page-scroll" href="#contact">Contact</a>
