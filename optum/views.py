@@ -57,7 +57,7 @@ gender={
 
 ethinicty={
   'nonhispanic': 0.3223546403468008, 
- 'hispanic': -3.101555958178205
+  'hispanic': -3.101555958178205
  }      
 
 def index(request):
