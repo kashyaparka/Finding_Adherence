@@ -71,7 +71,7 @@ def project(request):
 
 def result(request):
     lis = []
-    cls = joblib.load('Final_model')
+    cls = joblib.load('final_model')
 
     #res.append(request.GET[])
     get_country=request.POST.get('Dropdown')
