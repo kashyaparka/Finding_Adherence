@@ -16,6 +16,7 @@
 		<!-- Custom styles for this template -->
 		<link href={% static 'css/style.css' %} rel="stylesheet">
 		<link href={% static 'css/form.css' %} rel="stylesheet">
+		<link href={% static 'css/model.css' %} rel="stylesheet">
 	</head>
 	<body id="page-top">
 		<!-- Navigation -->
@@ -55,7 +56,7 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
-            <div class="zf-templateWidth">
+        <div class="zf-templateWidth">
         <form
             action='{% url 'result' %}'
             name='form' method='post'
@@ -195,7 +196,71 @@
                 </ul>
             </div><!-- 'zf-templateWrapper' ends -->
         </form>
-        </div><!-- 'zf-templateWidth' ends -->
+        </div>
+        <section class="our-webcoderskull padding-lg">
+  <div class="container">
+    <div class="row heading heading-icon">
+        <h2>Factors Affecting Ethnicity</h2>
+        <p>We plotted the different plots to discover the major contributing variables that will impact the adherency of the patient,we plotted charts to show the predominance of a gathering of individuals in regard of Gender,Ethinicity,Race,count,country and age. 
+
+We had the option to see that among the sexual orientation Female are more adherence contrast with male(ie female being non-follower is close around 65% while that of male is 35%).The explanation of being Non-Adherence among female might be occupied with their family exercises or might be somewhat thoughtless. 
+<br>
+As we go for race we can unmistakably see the larger part goes for non Hispanic(i.e around 88% of Non-Hispanic is nonadherent and 12% among Hispanic who are non adherence). <br>
+<br>
+At the point when we go for race there is no such race where there is greatest are Non follower ,we can see an equivalent appropriation in each race.<br>In region Nantucket around 67% individuals are non adherent,which tops the rally among other county.Even the country GT 83%people are Non disciple. 
+<br>
+At last as we go for the gathering of ages we can unmistakably see that patients gathering in middle age are bound to be Non-Adherent, which have a level of 59%.</p>
+    </div>
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+         <div class="cnt-block equal-hight" style="height: 349px;">
+           <img src={% static 'images/Figure_1.png' %} class="img-responsive" alt="">
+            <h3>Non-Adherency Vs Gender Graph</h3>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <img src={% static 'images/Figure_2.png' %} class="img-responsive" alt="">
+            <h3>Non-Adherency Vs Ethinicity Graph</h3>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+           <div class="cnt-block equal-hight" style="height: 349px;">
+           <img src={% static 'images/Figure_3.png' %} class="img-responsive" alt="">
+            <h3>Non-Adherency as per Longitute & Latitude</h3>
+          </div>
+       </li>
+      <li class="col-12 col-md-6 col-lg-3">
+           <div class="cnt-block equal-hight" style="height: 349px;">
+            <img src={% static 'images/Figure_4.png' %} class="img-responsive" alt="">
+            <h3>Non-Adherency Vs Race Graph</h3>
+          </div>
+      </li>
+    </ul>
+
+      <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+         <div class="cnt-block equal-hight" style="height: 349px;">
+            <img src={% static 'images/Figure_5.png' %} class="img-responsive" alt="">
+            <h3>Non-adherency Vs County Garph</h3>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+           <img src={% static 'images/Figure_6.png' %} class="img-responsive" alt="">
+            <h3>Non-adherency Vs Country Garph</h3>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+           <div class="cnt-block equal-hight" style="height: 349px;">
+            <img src={% static 'images/Figure_7.png' %} class="img-responsive" alt="">
+            <h3>Non-Adherency Vs Age Grouping</h3>
+          </div>
+       </li>
+    </ul>
+  </div>
+</section>
+<!-- 'zf-templateWidth' ends -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src={% static 'js/bootstrap.min.js' %}></script>
 		<script src{% static 'js/SmoothScroll.js' %}></script>
