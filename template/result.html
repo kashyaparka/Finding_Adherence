@@ -1,127 +1,122 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<link rel="icon" href="favicon.ico">
-		<title>AdherenceFinder-Team Kaskashi</title>
-		<!-- Bootstrap core CSS -->
-		<link href={% static 'css/bootstrap.min.css' %} rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<!-- Custom styles for this template -->
-		<link href={% static 'css/style.css' %} rel="stylesheet">
-		<link href={% static 'css/form.css' %} rel="stylesheet">
-	</head>
-	<body id="page-top">
-		<!-- Navigation -->
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico">
+	<title>AdherenceFinder-Team Kaskashi</title>
+	<!-- Bootstrap core CSS -->
+	<link href={% static 'css/bootstrap.min.css' %} rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Custom styles for this template -->
+	<link href={% static 'css/style.css' %} rel="stylesheet">
+	<link href={% static 'css/form.css' %} rel="stylesheet">
+</head>
+
+<body id="page-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-					</button>
-					 <a class="navbar-brand page-scroll bg-dark" href="#page-top"><img src={% static 'images/logo1.jpg' %} alt="Treviso theme logo" style="width:150px;"></a> 
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="hidden">
-							<a href="#page-top"></a>
-						</li>
-						<li>
-							<a class="page-scroll" href="{% url 'index' %}">HOME</a>
-							
-						</li>
-						<li>
-							<a class="page-scroll" href="{% url 'models' %}">Models</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="{% url 'project' %}">Project</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
+				</button>
+				<a class="navbar-brand page-scroll bg-dark" href="#page-top"><img src={% static 'images/logo1.jpg' %}
+						alt="Treviso theme logo" style="width:150px;"></a>
 			</div>
-			<!-- /.container-fluid -->
-		</nav>
-        <section id="about" class="mz-module">
-			<div class="container light-bg">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="section-title">
-                            <h2>You Are {{ans}}</h2>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li>
+						<a class="page-scroll" href="{% url 'index' %}">HOME</a>
+
+					</li>
+					<li>
+						<a class="page-scroll" href="{% url 'models' %}">Models</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="{% url 'project' %}">Project</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<section id="about" class="mz-module">
+		<div class="container light-bg">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-title">
+						<h2>You Are {{ans}}</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mz-about-container">
+						<div class="section-title" style="font-size:100;">
+							<p>Methods to improve medication adherence</p>
+
+							<p>The effectiveness of a treatment depends on both the efficacy of a medication and patient
+								adherence to the
+								therapeutic regimen. Patients, health care providers, and health care systems, all have
+								a role to improve medication adherence.
+								A single method cannot improve medication adherence, instead a combination of various
+								adherence techniques should be implemented to
+								improve patient’s adherence to their prescribed treatment. A systematic approach that
+								could be instituted in improving medication
+								adherence is as follows:<br><br>
+								1)Maintaining legitimate Stock : <br>
+
+								You want to keep up with month to month stock for forestalling the omission medicine
+								because of shortage of medication.
+								<br><br>
+
+								2)Regular alerts through caution :<br>
+								Legitimate and normal cautions ought to be kept up with to forestall irregular
+								medications .
+								<br><br>
+								3)Different Dosage :<br>
+
+								You should not take meds recommended to another person by your own .<br><br>
+								4)Course Completation <br>
+								Course of prescription ought to be finished properly,one ought not left it to some
+								extent finished.<br><br>
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mz-about-container">	
-                            <div class="section-title" style="font-size:100;">
-						  <p>Methods to improve medication adherence</p>
 
-<p>The effectiveness of a treatment depends on both the efficacy of a medication and patient adherence to the 
-therapeutic regimen. Patients, health care providers, and health care systems, all have a role to improve medication adherence. 
-A single method cannot improve medication adherence, instead a combination of various adherence techniques should be implemented to
- improve patient’s adherence to their prescribed treatment. A systematic approach that could be instituted in improving medication 
- adherence is as follows:<br>
-1) Level of prescribing:<br>
-
-Introduce a collaborative approach with the patient at the level of prescribing
-
-Whenever possible, involve patients in decision making regarding their medications so that they have a sense of ownership and they are partners in the treatment plan.
-
-Simplify medication taking
-<br>
-Use the most possible simplified regimen based on patient characteristics at the first level of drug use.
-2) Communicating with the patient:<br>
-
-Explain key information when prescribing/ dispensing a medicine
-
-Address the key information about the drugs (what, why, when, how, and how long).
-
-Inform the common side effects and those that patient should necessarily know (Patients would be more worried and lead to non adherence due to side effects that was not cautioned to them in advance by health care professionals)
-
-Use medication adherence improving aids
-
-Provide medication calendars or schedules that specify the time to take medications, drug cards, medication charts or medicine related information sheets or specific packaging’s such as pill boxes, ‘unit-of-use’ packaging, and special containers indicating the time of dose.
-
-Provide behavioral support
-
-Collaborate with patient to incorporate the medication regimen into his/her daily regimen (essential in those on complex 
-drug regimens, those having unintentional difficulties in adherence e.g. elderly)<bry>
-3) During follow ups:<br>
-
-Schedule appropriate follow up
-
-Monitoring the medication adherence should also be a criteria while scheduling patient follow up</p>
-					    	</div>
-						</div>
-					</div>
-					
-				</div>
-			
-				</div>
 			</div>
-			<!-- /.container -->
-		</section>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src={% static 'js/bootstrap.min.js' %}></script>
-		<script src{% static 'js/SmoothScroll.js' %}></script>
-		<script src={% static 'js/theme-scripts.js' %}></script>
-		<script src={% static 'js/validation.js' %}></script>
-	</body>
+		</div>
+		</div>
+		<!-- /.container -->
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src={% static 'js/bootstrap.min.js' %}></script>
+	<script src{% static 'js/SmoothScroll.js' %}></script>
+	<script src={% static 'js/theme-scripts.js' %}></script>
+	<script src={% static 'js/validation.js' %}></script>
+</body>
+
 </html>
-
